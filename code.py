@@ -27,11 +27,11 @@ def predict_speaker(test_file, avg_i, cov_inv):
 
 # Dataset
 dataset={
-         'Sandhya':["vsa1.wav", "vsa2.wav", "vsa3.wav"],
+         'San':["vsa1.wav", "vsa2.wav", "vsa3.wav"],
          'Rose':["vro1.wav", "vro2.wav", "vro3.wav"],
-         'Adithya':["vak1.wav", "vak2.wav", "vak3.wav"],
-         'Nirupama':["vni1.wav","vni2.wav","vni3.wav"],
-         'Jayanth':["vja1.wav","vja2.wav","vja3.wav"],
+         'Adi':["vak1.wav", "vak2.wav", "vak3.wav"],
+         'Niru':["vni1.wav","vni2.wav","vni3.wav"],
+         'Jay':["vja1.wav","vja2.wav","vja3.wav"],
          }
 
 # Calculate average of MFCC features
@@ -46,11 +46,11 @@ cov_inv = np.linalg.pinv(covm)
 
 # Test dataset with true labels
 test_dataset = {
-    'chkni.wav': 'Nirupama',
+    'chkni.wav': 'Niru',
     'chkro.wav': 'Rose',
-    'chksa.wav': 'Sandhya',
-    'chkja.wav': 'Jayanth',
-    'chkak.wav': 'Adithya'
+    'chksa.wav': 'San',
+    'chkja.wav': 'Jay',
+    'chkak.wav': 'Adi'
 }
 
 #chatgpt code to calc metrics
